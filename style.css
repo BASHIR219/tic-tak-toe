@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: purple;
+    color: whitesmoke;
+    height: 40px;
+    font-size: medium;
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    padding: 10px;
+}
+.gamecontainer{
+   background-color: rgb(220, 233, 244);
+    display: flex;
+    justify-content: center;
+    height: 88vh;
+    flex-wrap: wrap;
+}
+.container{
+    display: grid;
+    grid-template-rows:repeat(3, 10vh) ;
+    grid-template-columns:repeat(3, 10vh) ;
+    margin: 50px;
+    position: relative;
+}
+
+.line{
+    background-color: rgb(13, 98, 234);
+    height: 2px;
+    width: 0vw;
+    position: absolute;
+    transition: 2s ease-in-out;
+}
+.box{
+    border:1px solid rgb(0, 0, 0);
+    font-size:4vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box:hover{
+    background-color: rgb(240, 234, 240);
+}
+.info{
+    font-size: 40px;
+    /* color: greenyellow; */
+}
+
+.gameinfo{
+    padding: 20px;
+}
+.imgbox img{
+    width: 00px;
+    transition: 1s ease-in-out;
+}
+#reset{
+    padding:4px;
+    margin: 10px;
+    background-color: rgb(164, 229, 190));
+    border-radius: 10px;
+    width: 60px;
+    cursor:pointer;
+}
+.ul{
+    border top: 0px;
+}
+@media  and (max-width:700px)
+ {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin: 5px;
+    }
+    .container{
+        grid-template-rows: (3, 10vw);
+        grid-template-columns: (3, 12vw);
+    }
+    .info{
+        font-size: 40px;
+        
+    }
+ }
+
+ footer{
+
+    background-color: black;
+    color: aliceblue;
+ }
+ .copy
+{
+    text-align: center;
+}
+
+.br-0{
+    border-right : 0;
+}
+.bl-0{
+    border-left : 0;
+}
+.bt-0{
+    border-top : 0;
+}
+.bb-0{
+    border-bottom : 0;
+}
